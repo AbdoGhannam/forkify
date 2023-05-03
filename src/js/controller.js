@@ -105,6 +105,10 @@ const controllAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFe = function () {
+  console.log('MotherFucker');
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controllBookmark);
   recipeView.addHandlerRender(controllRecipe);
@@ -113,7 +117,6 @@ const init = function () {
   searchView.addHandlerSearch(controllSearchResults);
   paginationView.addHandlerClick(controllPagination);
   addRecipeView.addHandlerUpload(controllAddRecipe);
+  newFe();
 };
 init();
-
-console.log('Hiii');
